@@ -10,9 +10,9 @@ userBtn.onclick = function() {
 // Function to choose and store username
 function setUsername() 
 {
-	var name = prompt('Enter your name:');
+	var name = prompt('Enter the name of a cutie:');
 	localStorage.setItem('name', name);
-	heading.textContent = 'User: ' + name;
+	heading.textContent = 'Hello cutie ' + name;
 }
 
 // Set up username on page load
@@ -23,6 +23,6 @@ if (!localStorage.getItem('name'))
 else 
 {
 	var storedName = localStorage.getItem('name');
-	heading.textContent = 'User: ' + storedName;
+	heading.textContent = 'Hello cutie  ' + storedName;
 }
 
